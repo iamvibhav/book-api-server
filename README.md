@@ -46,12 +46,6 @@ npm install
 
 ### 2. Configure Environment Variables
 
-Create a `.env` file in the root:
-
-```env
-MONGO_URI=mongodb://localhost:27017/bookdb
-```
-
 Make sure your local MongoDB server is running.
 
 ### 3. Start the server
@@ -69,23 +63,6 @@ Server running on port 5000
 
 ---
 
-## 📬 Sample curl Requests
-
-### Create a new book:
-
-```bash
-curl -X POST http://localhost:5000/api/books \
--H "Content-Type: application/json" \
--d '{"title":"Dune","author":"Frank Herbert","publishedYear":1965}'
-```
-
-### Get all books:
-
-```bash
-curl http://localhost:5000/api/books
-```
-
----
 
 ## 📁 Project Structure
 
@@ -96,17 +73,8 @@ book-api-server/
 ├── models/
 │   └── Book.js          # Mongoose book schema
 ├── routes/
-│   └── bookRoutes.js    # CRUD API logic
+│   └── bookRoutes.js    # API logic
 ```
-
----
-
-## 📝 Future Improvements
-
-* 🔒 Add user authentication
-* 🌐 Deploy with Render or Railway
-* 🧪 Add unit tests with Jest or Postman
-* 🎨 Build a frontend to interact with the API (React + Tailwind)
 
 ---
 
